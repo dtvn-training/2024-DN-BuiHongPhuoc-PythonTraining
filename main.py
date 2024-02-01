@@ -7,7 +7,6 @@ now = datetime.now()
 def main():
     bank = Bank()
     account = Account()
-    print(bank.typeBank,'bankkk')
     while True:
         print("NGAN HANG SO | Phuoc@v1.0.0")
         print("1. Thong tin khach hang")
@@ -85,10 +84,14 @@ def main():
             if len(report)>0:
                 print('Lich su rut tien tai khoan: {}',account_number)
                 for history in report:
-                    print(
-                        "Ngay rut: {} \n So tien rut: {} \n So du con lai: {} \n Phi: {} \n ATM: {} "
-                        .format(history[1],history[2],history[3],history[4],history[5])
-                        )
+                    print('---------------------------------------------------------')
+                    print('- Ngay rut:  {}',history[1])
+                    print('- So tien rut::  {}',history[2])
+                    print('- So du con lai:  {}',history[3])
+                    print('- Phi:  {}',history[4])
+                    print('- ATM:  {}',history[5])
+                    print('---------------------------------------------------------')
+
             else:
                 print('Khong co lich su')
 

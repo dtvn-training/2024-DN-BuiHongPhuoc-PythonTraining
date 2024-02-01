@@ -22,7 +22,7 @@ class Bank(Account):
     def display_customer_info(self):
         for customer in self.customer_info:
             print(
-            "Bank type: {} | Account Number: {} | Type of account: {} | Type of Card: {} | Balance: {} | Customer type: {} "
+            "Ngan hang: {} | So tai khoan: {} | Loai tai khoan: {} | Loai the: {} | So du: {} | Loai khach hang: {} "
             .format(customer.typeBank, customer.account_number, customer.typeAcc, customer.typeCard, customer.balance,customer.typeCus)
             )
     def check_account(self, accountNumber):
@@ -35,10 +35,3 @@ class Bank(Account):
         else:
             result = [False]
             return result
-
-    def display_history(self):
-        for customer in self.customer_info:
-            print(
-            "Bank type: {} | Account Number: {} | Type of account: {} | Type of Card: {} | Balance: {} | Customer type: {} "
-            .format(customer.typeBank, customer.account_number, customer.typeAcc, customer.typeCard, customer.balance,customer.typeCus)
-            )
